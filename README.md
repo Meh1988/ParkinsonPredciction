@@ -1,4 +1,4 @@
-# ParkinsonPredciction
+# Parkinson Prediction
 Parkinson's Disease Prediction (Traditional Machine Learning vs Deep Learning)
 
 
