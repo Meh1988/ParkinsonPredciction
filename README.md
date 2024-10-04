@@ -15,53 +15,53 @@ Further details are contained in the following reference -- if you use this data
 Max A. Little, Patrick E. McSharry, Eric J. Hunter, Lorraine O. Ramig (2008), 'Suitability of dysphonia measurements for telemonitoring of Parkinson's disease', IEEE Transactions on Biomedical Engineering (to appear).
 
 Attribute Information:
-Matrix column entries (attributes):
-name - ASCII subject name and recording number
-MDVP:Fo(Hz) - Average vocal fundamental frequency
-MDVP:Fhi(Hz) - Maximum vocal fundamental frequency
-MDVP:Flo(Hz) - Minimum vocal fundamental frequency
-MDVP:Jitter(%), MDVP:Jitter(Abs), MDVP:RAP, MDVP:PPQ, Jitter:DDP - Several measures of variation in fundamental frequency
-MDVP:Shimmer,MDVP:Shimmer(dB),Shimmer:APQ3,Shimmer:APQ5,MDVP:APQ,Shimmer:DDA - Several measures of variation in amplitude
-NHR, HNR - Two measures of the ratio of noise to tonal components in the voice
-status - The health status of the subject (one) - Parkinson's, (zero) - healthy
-RPDE, D2 - Two nonlinear dynamical complexity measures
-DFA - Signal fractal scaling exponent
-spread1,spread2,PPE - Three nonlinear measures of fundamental frequency variation
+* Matrix column entries (attributes):
+- name - ASCII subject name and recording number
+- MDVP:Fo(Hz) - Average vocal fundamental frequency
+- MDVP:Fhi(Hz) - Maximum vocal fundamental frequency
+- MDVP:Flo(Hz) - Minimum vocal fundamental frequency
+- MDVP:Jitter(%), MDVP:Jitter(Abs), MDVP:RAP, MDVP:PPQ, Jitter:DDP - Several measures of variation in fundamental frequency
+- MDVP:Shimmer,MDVP:Shimmer(dB),Shimmer:APQ3,Shimmer:APQ5,MDVP:APQ,Shimmer:DDA - Several measures of variation in amplitude
+- NHR, HNR - Two measures of the ratio of noise to tonal components in the voice
+- status - The health status of the subject (one) - Parkinson's, (zero) - healthy
+- RPDE, D2 - Two nonlinear dynamical complexity measures
+- DFA - Signal fractal scaling exponent
+- spread1,spread2,PPE - Three nonlinear measures of fundamental frequency variation
 
 The dataset can be downloaded from here:
-https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set
+- https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set
 
 
 Models
 The following machine learning and deep learning models are implemented:
+-Support Vector Machine (SVM)
+-Naive Bayes (NB)
+-Decision Tree (DT)
+-Simple Neural Network
+-Convolutional Neural Network (CNN)
+-Recurrent Neural Network (RNN)
 
-Support Vector Machine (SVM)
-Naive Bayes (NB)
-Decision Tree (DT)
-Simple Neural Network
-Convolutional Neural Network (CNN)
-Recurrent Neural Network (RNN)
+
 Setup
-To run the code, you will need the following libraries:
-
-pandas
-numpy
-matplotlib
-scikit-learn
-tensorflow
+* To run the code, you will need the following libraries:
+-pandas
+-numpy
+-matplotlib
+-scikit-learn
+-tensorflow
 
 
 
 Outputs
-The code performs the following tasks:
+-The code performs the following tasks:
 
-Loads the dataset and prepares the features and labels.
-Computes and plots feature importance using SelectKBest.
-Splits the data into training and test sets and scales the features.
-Trains three traditional machine learning models and evaluates them.
-Trains three deep learning models and evaluates them.
-Plots the accuracy scores of all the models for comparison.
-Visualization
+-Loads the dataset and prepares the features and labels.
+-Computes and plots feature importance using SelectKBest.
+-Splits the data into training and test sets and scales the features.
+-Trains three traditional machine learning models and evaluates them.
+-Trains three deep learning models and evaluates them.
+-Plots the accuracy scores of all the models for comparison.
+-Visualization
 
 Two visualizations are generated:
 - Feature Importance Plot
